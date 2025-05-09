@@ -21,7 +21,7 @@ nota = int (input ("Por favor indique su nota"))
 #Determinar condicional
 if nota >= 6:
     print ("Aprobado")
-else: 
+else:
     print ("Desaprobado")
 
 #ejercicio 3
