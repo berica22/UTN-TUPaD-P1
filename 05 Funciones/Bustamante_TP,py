@@ -1,0 +1,29 @@
+#Ejercicio 1
+# Definir funciòn
+def imprimir_hola_mundo():
+    print ("Hola mundo!")
+#programa principal
+imprimir_hola_mundo()
+
+
+#Ejercicio 2
+
+#Definir funcion
+nombre = input("Colocá tu nombre: ")
+
+print(f"Hola {nombre}!")
+
+#Ejwecicio 3 
+def informacion_personal(nombre, apellido, edad, residencia):
+    print(f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}")
+
+    nombre = input("¿Cuál es tu nombre? ")
+    apellido = input("¿Cuál es tu apellido? ")
+    edad = input("¿Cuántos años tienes? ")
+    residencia = input("¿Dónde vives? ")
+#programa principañ
+informacion_personal()
+   
+ 
+
+

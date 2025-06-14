@@ -13,6 +13,8 @@ while cont <= 100:
 # Desarrolla un programa que solicite al usuario un número entero y 
 # determine la cantidad de dígitos que contiene.
 
+
+
 # Ejercicio 3 Escribe un programa que sume todos los números enteros 
 # comprendidos entre dos valores dados por el usuario, excluyendo esos dos valores.
 
