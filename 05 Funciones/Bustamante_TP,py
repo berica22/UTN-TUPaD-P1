@@ -24,6 +24,151 @@ def informacion_personal(nombre, apellido, edad, residencia):
 #programa principañ
 informacion_personal()
    
- 
+#Crear dos funciones: calcular_area_circulo(radio) que reciba el ra-
+#dio como parámetro y devuelva el área del círculo. calcular_peri-
+#metro_circulo(radio) que reciba el radio como parámetro y devuel-
+#va el perímetro del círculo. Solicitar el radio al usuario y llamar am-
+#bas funciones para mostrar los resultados.
+
+import math
+
+def calcular_area_circulo(radio):
+    """Calcula el área de un círculo dado su radio"""
+    area = math.pi * (radio ** 2)
+    return area
+
+def calcular_perimetro_circulo(radio):
+    """Calcula el perímetro de un círculo dado su radio"""
+    perimetro = 2 * math.pi * radio
+    return perimetro
+
+def main():
+    # Solicitar el radio al usuario
+    radio = float(input("Ingrese el radio del círculo: "))
+
+    # Calcular y mostrar el área y perímetro
+    area = calcular_area_circulo(radio)
+    perimetro = calcular_perimetro_circulo(radio)
+
+    print(f"Área del círculo: {area:.2f}")
+    print(f"Perímetro del círculo: {perimetro:.2f}")
+
+if _name_ == "_main_":
+    main()
+
+# Crear una función llamada segundos_a_horas(segundos) que reciba
+# una cantidad de segundos como parámetro y devuelva la cantidad
+# de horas correspondientes. Solicitar al usuario los segundos y 
+# mostrar el resultado usando esta función.
+
+def segundos_a_horas(segundos):
+    """Convierte segundos a horas"""
+    horas = segundos / 3600
+    return horas
+
+def main():
+    # Solicitar los segundos al usuario
+    segundos = int(input("Ingrese la cantidad de segundos: "))
+
+    # Convertir segundos a horas y mostrar el resultado
+    horas = segundos_a_horas(segundos)
+    print(f"{segundos} segundos equivalen a {horas:.2f} horas")
+
+if _name_ == "_main_":
+    main()
+
+# Crear una función llamada tabla_multiplicar(numero) que reciba un
+# número como parámetro y imprima la tabla de multiplicar de ese
+# número del 1 al 10. Pedir al usuario el número y llamar a la función.
+
+def tabla_multiplicar(numero):
+    """Imprime la tabla de multiplicar de un número"""
+    print(f"Tabla de multiplicar del {numero}:")
+    for i in range(1, 11):
+        resultado = numero * i
+        print(f"{numero} x {i} = {resultado}")
+
+def main():
+    # Solicitar el número al usuario
+    numero = int(input("Ingrese un número: "))
+
+    # Llamar a la función para imprimir la tabla de multiplicar
+    tabla_multiplicar(numero)
+
+if _name_ == "_main_":
+    main()
 
 
+# Crear una función llamada calcular_imc(peso, altura) que reciba el
+# peso en kilogramos y la altura en metros, y devuelva el índice de
+# masa corporal (IMC). Solicitar al usuario los datos y llamar a la 
+# función para mostrar el resultado con dos decimales.
+
+def calcular_imc(peso, altura):
+    """Calcula el índice de masa corporal (IMC)"""
+    imc = peso / (altura ** 2)
+    return imc
+
+def main():
+    # Solicitar los datos al usuario
+    peso = float(input("Ingrese su peso en kilogramos: "))
+    altura = float(input("Ingrese su altura en metros: "))
+
+    # Calcular el IMC y mostrar el resultado
+    imc = calcular_imc(peso, altura)
+    print(f"Su IMC es: {imc:.2f}")
+
+    # Clasificar el IMC
+    if imc < 18.5:
+        print("Clasificación: Bajo peso")
+    elif imc < 25:
+        print("Clasificación: Peso normal")
+    elif imc < 30:
+        print("Clasificación: Sobrepeso")
+    else:
+        print("Clasificación: Obesidad")
+
+if _name_ == "_main_":
+    main()
+
+# Crear una función llamada celsius_a_fahrenheit(celsius) que reciba
+# una temperatura en grados Celsius y devuelva su equivalente en
+# Fahrenheit. Pedir al usuario la temperatura en Celsius y mostrar el
+# resultado usando la funciòn
+
+def celsius_a_fahrenheit(celsius):
+    """Convierte Celsius a Fahrenheit"""
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
+
+def main():
+    # Solicitar la temperatura en Celsius al usuario
+    celsius = float(input("Ingrese la temperatura en Celsius: "))
+
+    # Convertir Celsius a Fahrenheit y mostrar el resultado
+    fahrenheit = celsius_a_fahrenheit(celsius)
+    print(f"{celsius}°C es equivalente a {fahrenheit:.2f}°F")
+
+if _name_ == "_main_":
+    main()
+
+
+def calcular_promedio(a, b, c):
+    """Calcula el promedio de tres números"""
+    promedio = (a + b + c) / 3
+    return promedio
+
+def main():
+    # Solicitar los números al usuario
+    a = float(input("Ingrese el primer número: "))
+    b = float(input("Ingrese el segundo número: "))
+    c = float(input("Ingrese el tercer número: "))
+
+    # Calcular y mostrar el promedio
+    promedio = calcular_promedio(a, b, c)
+    print(f"El promedio de {a}, {b} y {c} es: {promedio:.2f}")
+
+if _name_ == "_main_":
+    main()
+
+    
